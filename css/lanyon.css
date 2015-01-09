@@ -300,6 +300,12 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
+  /* Custom: Add horizontal rule on post listings */
+  border-bottom: 1px solid #eee;
+}
+/* And remove it for individual posts */
+.post-single {
+  border-bottom: none;
 }
 
 /* Blog post or page title */
