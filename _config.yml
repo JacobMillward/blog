@@ -1,0 +1,20 @@
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Jacob Millward
+tagline:             "My personal internet resting place"
+description:         "Home of Jacob Millward's all-natural free-range blog."
+url:                 http://www.jacobmillward.com
+baseurl:             /
+paginate:            5
+
+github_url:         http://github.com/jacobmillward
+twitter_url:        http://twitter.com/jacobmillward
