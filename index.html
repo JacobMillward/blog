@@ -17,9 +17,10 @@ title: Home
     {% capture excerpt %}{{ post.content | truncatewords:75}}{% endcapture %}
     {{ excerpt }}
     {% if excerpt.size != post.content.size %}
-    <p><a href="{{post.url}}">Read more &raquo;</a><p>
+    <p><a href="{{post.url}}">Read more &raquo;</a></p>
     {% endif %}
   {% endfor %}
+  </div>
 </div>
 
 <div class="pagination">
