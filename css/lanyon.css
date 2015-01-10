@@ -327,6 +327,11 @@ a.sidebar-nav-item:focus {
   color: #9a9a9a;
 }
 
+/* Custom: Portfolio table code */
+td {
+  margin: 0px auto;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;
