@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-<img src="{{site.baseurl}}img/Bear_Headshot_Avatar.png" id="avatar" style="overflow: hidden;width: 150px;height: 150px;border: 2px solid #777;border-radius: 60%;" />
+<img src="{{site.baseurl}}img/Bear_Headshot_Avatar.png" id="avatar" style="overflow: hidden;width: 150px;height: 150px;border: 2px solid #777;border-radius: 60%;margin:0px auto;" />
 ##Jacob Millward
 ####Student, Englishman, Technological dabbler.
 I'm a Computer Science student in the north of England, with a habit of breaking warranties. I have experience with Java, C#, Python and a smattering of C++.
