@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Updating a site using Github Webhooks
+comments: true
 ---
 
 A while ago I was making a small site with Jekyll, and my workflow looked something like this:

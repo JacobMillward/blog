@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hacking the iKettle
+comments: true
 ---
 
 Over Christmas I was lucky enough to receive the [iKettle/WifiKettle](http://smarter.am/). When you set it up it creates its own wifi network that you have to connect to, before you can use the mobile app to connect it to your home network (unfortunately 2.4GHz only). A bit clunky but hey it works.
