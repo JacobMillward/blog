@@ -9,7 +9,7 @@ Me being the geek I am the first thing I wanted to know was if I could make my o
 
 Anyway onto the good stuff. I found a great write-up [here](http://www.awe.com/mark/blog/20140223.html) that details the protocol of the kettle. With this info, I went to work creating [these Java classes]({{site.github_url}}/KettleControl).
 
-This is the math for decoding the status when you explicitely ask for it. For some reason it's all encoded into a single byte, whereas asynchronous status updates are given status codes.
+This is the math for decoding the status when you explicitly ask for it. For some reason it's all encoded into a single byte, whereas asynchronous status updates are given status codes.
 {% highlight java %}
 //Convert the 16th byte into a boolean array containing the first 6 bits
 //16th byte of response contains information on which buttons are active
@@ -22,9 +22,9 @@ statusBoolArray[3] = ((StatusByte[0] & 0x08) != 0);
 statusBoolArray[4] = ((StatusByte[0] & 0x10) != 0);
 statusBoolArray[5] = ((StatusByte[0] & 0x20) != 0);
 {% endhighlight %}
-Nothing groudbreaking, I just find it neat.
+Nothing groundbreaking, I just find it neat.
 
-It isn't anything too fancy, it sends commands encoded into ASCII and uses a threaded listener to listen for responses. I'm not entirely sure it's complete, but either way you can use them to communicate with the kettle! It also has some rudimentary network scanning capability. I had to teach myself about Java sockets and concurrency in order to get this working right, so time well spent. The most interesting part was the mathmatics involved in decoding the info returned when you explicitely ask for the kettle's status.
+It isn't anything too fancy, it sends commands encoded into ASCII and uses a threaded listener to listen for responses. I'm not entirely sure it's complete, but either way you can use them to communicate with the kettle! It also has some rudimentary network scanning capability. I had to teach myself about Java sockets and concurrency in order to get this working right, so time well spent. The most interesting part was the mathematics involved in decoding the info returned when you explicitly ask for the kettle's status.
 
 Next step is to try creating a replacement android app. This will be my first 'proper' foray into android coding so I'll hopefully learn a lot.
 
