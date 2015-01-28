@@ -37,7 +37,7 @@ file_put_contents('github.log', print_r($payload, TRUE), FILE_APPEND);
 
 if ($payload->ref === 'refs/heads/master')
 {
-  sexec('scripts/./build.sh');
+  exec('scripts/./build.sh');
 }
 ?>
 {% endhighlight %}
