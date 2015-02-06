@@ -3,6 +3,8 @@ layout: post
 title: Updating a site using Github Webhooks
 comments: true
 ---
+>**UPDATE:** You might find [this newer post]({% post_url 2015-02-06-git-push-to-deploy %}) more helpful.
+
 
 A while ago I was making a small site with Jekyll, and my workflow looked something like this:
 
