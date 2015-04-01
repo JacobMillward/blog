@@ -8,12 +8,12 @@ title: Portfolio
   {% for project in site.data.projects %}
   <tr>
     <td style="width: 150px">{{project.name}}</td>
-    <td style="width:300px"><img src="{{site.baseurl}}{{project.image_url}}" style="width:300px;height:200px;" /></td>
+    <td style="width:300px"><a class="fancybox" rel="group" href="{{site.baseurl}}{{project.image_url}}"><img src="{{site.baseurl}}{{project.image_url}}" alt="" /></a></td>
     <td>
       <p>
         {{project.description}}
       </p>
-      <p><a href="{{project.download_url}}">Download here &raquo;</a></p>
+      <p><a href="{{project.url}}" target="_blank">{{project.action_call}} &raquo;</a></p>
     </td>
   </tr>
   {% endfor %}
