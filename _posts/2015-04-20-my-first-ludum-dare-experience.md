@@ -14,7 +14,7 @@ I had a vague idea in my head, something about plants attacking a city. I had no
 
 Because I had no idea where it was going, I soon realised that the scope of what I wanted to make was way beyond my abilities with Unity. After working for the entire first day, and half of the second day, had came up with a rather unimpressive prototype. The city was destructible, and you could spawn seeds that laid down green grass on the right hand side of the screen.
 
-![My first attemptt]({{site.baseurl}}img/posts/2015-04-20/city_seeds.png "My first attempt")
+![My first attempt]({{site.baseurl}}img/posts/2015-04-20/city_seeds.png "My first attempt")
 *Far too much work for little fun*
 
 I decided that my idea was taking far too long, and it still wasn't anywhere near fun to play. I pulled the plug and started work on a simpler idea (the one I ended up submitting).
