@@ -1,20 +1,17 @@
 # Dependencies
-markdown:            redcarpet
-highlighter:         pygments
+gems:                [jekyll-paginate]
 
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:               Jacob Millward
 tagline:             "My personal internet resting place"
 description:         "Home of Jacob Millward's all-natural free-range blog."
-url:                 http://www.jacobmillward.com
+url:                 http://jacob.millward.io
 baseurl:             /
 paginate:            5
+paginate_path:       "page:num"
 
 github_url:         http://github.com/jacobmillward
 twitter_url:        http://twitter.com/jacobmillward
