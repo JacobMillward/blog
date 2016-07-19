@@ -9,8 +9,8 @@ Git 2.3 ([Release Notes](https://github.com/gitster/git/blob/v2.3.0/Documentatio
 I [previously wrote]({% post_url 2015-01-27-Updating-a-site-using-Github-Webhooks %}) about a way to automagically update your site with changes to a repository. Now as long as your site doesn't require a build step you can update your site by pushing directly to your webserver.
 
 You can enable this on your server with the following command.
-{% highlight bash %}
+``` bash
 $ git config receive.denyCurrentBranch updateInstead
-{% endhighlight %}
+```
 
 Nice and simple! Stay tuned.

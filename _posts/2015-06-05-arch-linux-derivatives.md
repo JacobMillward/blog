@@ -20,9 +20,9 @@ First problem I ran into was the fact that the graphical installer had overwritt
 
 Maybe they dislike newcomers or maybe I asked the wrong question but all I got in response were passive aggressive "You should know how to fix this" responses - the complete opposite of what I am used to with the Linux Community at large. Eventually I was given the (surprisingly simple) command to reinstall rEFInd:
 
-{% highlight bash %}
+``` bash
 $ refind_install
-{% endhighlight %}
+```
 
 Nonetheless though, the IRC had left a nasty taste in my mouth.
 
@@ -47,11 +47,11 @@ After some googling I came across [Antergos](http://antergos.com), a Spanish-dev
 They ship their liveCD/liveUSB iso with a custom installer called cnchi, written in Python. When you run it, it automatically downloads the latest version of itself from the Antergos repos and updates. It's a brilliant and smooth system: if it works. Unfortunately like [many others](http://forum.antergos.com/topic/1909/cnchi-never-load-after-update) I had problems connecting to their repos which meant the installation of the latest version of cnchi didn't work.
 
 The following commands force an update
-{% highlight bash %}
+``` bash
 $ sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist
 $ sudo pacman -Syy cnchi --force
 $ sudo -E cnchi -dv
-{% endhighlight %}
+```
 
 Once you get it running, it's a really easy process and it even pulls the latest changes as it installs, meaning you don't have to update after you install!
 

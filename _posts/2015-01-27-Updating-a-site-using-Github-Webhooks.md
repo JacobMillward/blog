@@ -19,10 +19,10 @@ Basically this allows you to send HTTP POST payloads to URLs after configurable 
 
 First of all, I set up Github to send data after a 'push' event (the default).
 
-![Github Webooks configuration](img/posts/2015-01-27/webhooks.png "Webhooks Configuration")
+![Github Webooks configuration](/img/posts/2015-01-27/webhooks.png "Webhooks Configuration")
 
 After doing this, I then set up the deploy.php script on my server. Looked something a little like this.
-{% highlight php %}
+``` php
 <?php
 try
 {
@@ -42,10 +42,9 @@ if ($payload->ref === 'refs/heads/master')
   exec('scripts/./build.sh');
 }
 ?>
-{% endhighlight %}
-
+```
 Basically, I'm checking the ref to see if it was the master branch that has been updated (the push event will trigger on a push to any branch). If it is, then it calls a shell script that looks something like this.
-{% highlight bash %}
+``` bash
 # Backup previous version of the site in case something borks
 rm -r -f ~/www.bak/
 cp -r ~/www ~/www.bak
@@ -57,7 +56,7 @@ git reset --hard
 # Pull changes and build site
 git pull
 jekyll build
-{% endhighlight %}
+```
 
 This works fine, but isn't any secure. Github supports using [secrets](https://developer.github.com/webhooks/securing/) in the payload to validate that the payload is from Github. I never implemented it myself as it was a small personal project I was pretty certain no one would ever see. But if you want to use this for anything important you should probably pay attention.
 
