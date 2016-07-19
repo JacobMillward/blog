@@ -4,4 +4,4 @@ A static site using [Jekyll](http://www.jekyllrb.com) and being served with [Git
 
 Based on the [Lanyon Theme](http://lanyon.getpoole.com).
 
-Available at http://jacobmillward.com/.
+Available at http://jacob.millward.io.

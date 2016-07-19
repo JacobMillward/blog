@@ -9,7 +9,6 @@ title:               Jacob Millward
 tagline:             "My personal internet resting place"
 description:         "Home of Jacob Millward's all-natural free-range blog."
 url:                 http://jacob.millward.io
-baseurl:             /
 paginate:            5
 paginate_path:       "page:num"
 

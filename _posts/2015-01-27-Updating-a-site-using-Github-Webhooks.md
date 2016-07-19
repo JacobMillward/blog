@@ -19,7 +19,7 @@ Basically this allows you to send HTTP POST payloads to URLs after configurable 
 
 First of all, I set up Github to send data after a 'push' event (the default).
 
-![Github Webooks configuration]({{site.baseurl}}img/posts/2015-01-27/webhooks.png "Webhooks Configuration")
+![Github Webooks configuration](img/posts/2015-01-27/webhooks.png "Webhooks Configuration")
 
 After doing this, I then set up the deploy.php script on my server. Looked something a little like this.
 {% highlight php %}
