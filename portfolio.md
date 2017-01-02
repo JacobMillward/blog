@@ -13,7 +13,13 @@ title: Portfolio
       <p>
         {{project.description}}
       </p>
-      <p><a href="{{project.url}}" target="_blank">{{project.action_call}} &raquo;</a></p>
+      <p>
+      {% if project.url %}
+      <a href="{{project.url}}" target="_blank">View &raquo;</a>
+      {% else %}
+      <i>Oh no! This project is no longer online :(</i>
+      {% endif %}
+      </p>
     </td>
   </tr>
   {% endfor %}
