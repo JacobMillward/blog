@@ -2,13 +2,13 @@
 layout: page
 title: Portfolio
 ---
-##Featured
+## Featured
 
 <table>
   {% for project in site.data.projects %}
   <tr>
     <td style="width: 150px">{{project.name}}</td>
-    <td style="width:300px"><a class="fancybox" rel="group" href="{{site.baseurl}}{{project.image_url}}"><img src="{{site.baseurl}}{{project.image_url}}" alt="" /></a></td>
+    <td style="width:300px"><a class="fancybox" rel="group" href="{{project.image_url}}"><img src="{{project.image_url}}" alt="" /></a></td>
     <td>
       <p>
         {{project.description}}

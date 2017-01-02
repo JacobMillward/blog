@@ -4,13 +4,13 @@
 #   url: "#"
 #	action_call: View Site
 - name: FelicityFinds
-  image_url: img/portfolio/FFinds.png
+  image_url: /img/portfolio/FFinds.png
   description: A lifestyle and travel blog by Felicity Millward.
   url: "http://felicityfinds.co.uk/"
   action_call: View Site
 
 - name: Last Bastion
-  image_url: img/portfolio/LastBastion.png
+  image_url: /img/portfolio/LastBastion.png
   description: "An ecommerce site for a tabletop gaming company in Rotherham. Features advanced shopping cart, PayPal and Stripe integration as well as a preorder system."
   url: "http://last-bastion.co.uk/"
   action_call: View Site

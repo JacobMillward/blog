@@ -331,6 +331,10 @@ a.sidebar-nav-item:focus {
 td {
   margin: 0px auto;
 }
+/* Custom: center images in posts */
+.post-single img {
+  margin: auto;
+}
 
 /* Related posts */
 .related {

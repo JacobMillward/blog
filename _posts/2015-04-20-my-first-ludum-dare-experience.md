@@ -8,25 +8,25 @@ After years of watching [Ludum Dare](http://ludumdare.com/compo/) from the sidel
 
 After learning the theme at 2am on Saturday, I took a nap until 9am so I could be refreshed and creative when I woke up. I started working by 10am. Hence my first mistake:
 
-##1. Think about your Game Idea
+## 1. Think about your Game Idea
 ---
 I had a vague idea in my head, something about plants attacking a city. I had no idea about the gameplay mechanics, or win/failure conditions. I figured that was stuff I could work out down the line. Boy was I wrong.
 
 Because I had no idea where it was going, I soon realised that the scope of what I wanted to make was way beyond my abilities with Unity. After working for the entire first day, and half of the second day, had came up with a rather unimpressive prototype. The city was destructible, and you could spawn seeds that laid down green grass on the right hand side of the screen.
 
-![My first attemptt]({{site.baseurl}}img/posts/2015-04-20/city_seeds.png "My first attempt")
+![My first attempt](/img/posts/2015-04-20/city_seeds.png "My first attempt")
 *Far too much work for little fun*
 
 I decided that my idea was taking far too long, and it still wasn't anywhere near fun to play. I pulled the plug and started work on a simpler idea (the one I ended up submitting).
 **I could have started work on my final game much sooner if I had spent more time thinking about what I wanted to create instead of launching headlong into it.**
 
-##2. Know your engine
+## 2. Know your engine
 ---
 [My in-progress game engine](https://github.com/JacobMillward/Coldflame-Engine) is still nowhere near ready for anything, so I decided to use [Unity](http://unity3d.com), thinking that I'd messed with it a bit in the past and therefore I could easily make a game in it.
 
 Although I was familiar with the work flow, I got hung up on the basic things I didn't know, such as animations or the quirks of trying to get pixel perfect 2D in Unity. **So much of my time was spent learning, eating into the time I spent creating**. In fact, my first idea may have come to fruition if I had known what I was doing!
 
-##3. Quick hacks are your enemy
+## 3. Quick hacks are your enemy
 ---
 As time goes on, a combination of tiredness and caffeine-induced headaches make quick hacks seem very appealing. By the time I submitted, my code was a spaghetti mess. Any hint of modularity had been squeezed out and there were tendrils of all sorts of objects snaking their way into every other object.
 
@@ -36,7 +36,7 @@ As such my trying to nail down bugs in those last few hours is a nightmare. In f
 *I feel very much like Cueball in Friday's xkcd.*
 
 
-##What I take away from this
+## What I take away from this
 ---
 All in all, I learnt a **lot**. I learnt loads about how to use Unity, and even more about how to manage my time. Although my entry this time is rather lack-luster, I'll be able to take everything I've learnt and produce something a lot better.
 
