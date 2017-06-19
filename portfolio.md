@@ -2,34 +2,38 @@
 layout: page
 title: Portfolio
 ---
-## Featured
 
-<table>
-  {% for project in site.data.projects %}
-  <tr>
-    <td style="width: 150px">{{project.name}}</td>
-    <td style="width:300px"><a class="fancybox" rel="group" href="{{project.image_url}}"><img src="{{project.image_url}}" alt="" /></a></td>
-    <td>
+##### For other projects visit my [Github]({{site.github_url}}).
+----
+{% for project in site.data.projects %}
+  <h3>{{project.name}}</h3>
+  <section class="splitContainer">
+    <div class="leftSide">
+    {% if project.image_url %}
+      <a class="fancybox" rel="group" href="{{project.image_url}}"><img src="{{project.image_url}}" alt="" /></a>
+      <i>Click to expand</i>
+    {% else %}
+      <p><i>Sorry, no image :(</i></p>
+    {% endif %}
+    </div>
+    <div class="rightSide">
       <p>
         {{project.description}}
       </p>
-      <p>
-      {% if project.url %}
-      <a href="{{project.url}}" target="_blank">View &raquo;</a>
-      {% else %}
-      <i>Oh no! This project is no longer online :(</i>
-      {% endif %}
-      </p>
-    </td>
-  </tr>
-  {% endfor %}
-  {% unless site.data.projects %}
-  <tr>
-    <td>Nothing here yet.</td>
-  </tr>
-  {% endunless %}
-</table>
-
-----
-
-For other projects visit my [Github]({{site.github_url}}).
+        {% if project.url %}
+        <p>
+          <a href="{{project.url}}">View &raquo;</a>
+        </p>
+        {% endif %}
+        {% if project.demo %}
+        <p>
+          <a href="{{project.demo}}">Demo &raquo;</a>
+        </p>
+        {% endif %}
+    </div>
+  </section>
+  <hr />
+{% endfor %}
+{% unless site.data.projects %}
+## Nothing here yet. :(
+{% endunless %}

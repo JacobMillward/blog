@@ -1,0 +1,14 @@
+.splitContainer {
+  display: flex;
+}
+.leftSide {
+  flex: 0 0 45%;
+}
+.leftSide img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.rightSide {
+  flex: 1;
+  margin-left: 15px;
+}

@@ -1,10 +1,32 @@
 # - name: Test Project 1
-#   image_url: img/portfolio/img1.png
+#   image_url: link/to/img.png
 #   description: This is a project description. It provides a brief overview of how a project should be displayed. A download link is below
-#   url: "#"
-- name: FelicityFinds
-  image_url: /img/portfolio/FFinds.png
-  description: A lifestyle and travel blog by Felicity Millward.
+#   url: "http://myprimarylink.com"
+#   demo: "http://mydownloadlink.com"
+- name: C++ Entity-Component Game Engine
+  image_url: /img/portfolio/GameEngine.png
+  description: A game engine written in C++. Uses SFML for rendering with Box2D physics. Special attention was paid to the entity management; reducing cache misses when iterating over components.
+  url: "https://github.com/JacobMillward/csc3224-gamedev"
+  demo: "https://www.dropbox.com/s/ex857kk2r8pq09j/GameEngineExample.zip?dl=1"
+
+- name: OpenCL Heightfield Fluid Simulation
+  image_url: /img/portfolio/opencl_fluids.png
+  description: A height field simulation written in C++ and OpenCL. Written as part of a dissertation on real-time fluid simulations on the GPU.<br />The demo is built to run on your CPU only, and requires an OpenCL runtime to be installed on your system.
+  url: "https://github.com/JacobMillward/opencl_fluids"
+  demo: "https://www.dropbox.com/s/h771wdcrrbs3ob2/opencl_fluids_CPU.zip?dl=1"
+
+- name: Facebook Messenger MUD
+  description: Written with Node.js it's an attempt at a MUD you can join and play through facebook messenger. An attempt to play with the facebook graph API, totally unfinished at the moment. Something I return to whenever I feel the urge. Hopefully will be completed some day!
+  url: "https://github.com/JacobMillward/mud_messengerbot"
+
+- name: Coldflame engine
+  image_url: /img/posts/2015-09-21/coldflame-example.png
+  description: The project that got me started with game engines back in 2015! Written in C#, it has an interesting subscriber-based model for systems and registered components. Provided a lot of the experience for the C++ engine produced more recently at the top of this page.
+  url: "https://github.com/jacobmillward/coldflame-engine"
+
+- name: Twitter Rust Client
+  description: My recent attempt to learn rust whilst making a semi-useful application. At the moment, it only shows a GTK interface built with Glade, with no interaction with the twitter API.
+  url: "https://github.com/JacobMillward/twitter_rust"
 
 - name: Last Bastion
   image_url: /img/portfolio/LastBastion.png
